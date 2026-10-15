@@ -9,8 +9,7 @@ I have a few repos which are public, how can I have a google form which is acces
 ## Implementation
 This is a fully free, server-less way to do this: Google Form → Google Apps Script (triggered on submit) → GitHub REST API. Apps Script runs on Google's infrastructure under your Google account, so it can hold your GitHub token privately and make the API call — the person filling out the form never needs a GitHub login or ever sees the token.
 
-
-## Public Google Form → GitHub Issue Creator
+## Bridge for Public Google Form → GitHub Issue
 
 Let anyone submit a bug report or feature request through a public Google Form — no GitHub account, no login, and no server — and have it appear automatically as an issue in a GitHub repository of their choice.
 
@@ -18,6 +17,12 @@ Built entirely on free tools:
 - **Google Forms** — the public submission form
 - **Google Apps Script** — runs the automation, hosted by Google, free
 - **GitHub REST API** — creates the issue, authenticated with a scoped personal access token
+
+## Architecture
+The architecture is as follows:
+
+![Architecture](img/architecture.png)
+
 
 ## How it works
 
@@ -127,5 +132,6 @@ Open the form's public link in an incognito/private window (to simulate a real a
 <br>
 <hr>
 Good Luck and Godspeed
+<br>
 <br>
 <sub>© 2026 Santak Das, Tara Design Studio. All rights reserved.</sub>
