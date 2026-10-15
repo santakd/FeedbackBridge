@@ -1,6 +1,6 @@
 # FeedbackBridge
 
-![FeedbackBridge.](FeedbackBridge.png)
+![Feedback Bridge](img/bridge.png)
 
   
 ## Objective
@@ -80,7 +80,9 @@ In the Apps Script editor: **Project Settings (gear icon) → Script Properties 
 - Key: `GITHUB_TOKEN`
 - Value: the token you copied in step 2
 
-Save. The token never appears in the code, so it stays private even if you share the script with others.
+Save. 
+
+The token never appears in the code, so it stays private even if you share the script with others.
 
 ### 5. Install the trigger and authorize
 
