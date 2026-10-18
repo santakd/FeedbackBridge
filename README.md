@@ -4,7 +4,7 @@
 
   
 ## Objective
-I have a few repos which are public, how can I have a google form which is accessible for anyone without logging into GitHub to be able to fill in the details and be able to create an issue in the configured repo. I would have a drop down of repos and the issue logged in should get created in the chosen repo. This will avoid the need to login to GitHub to log the issue. It should be as simple as possible without relying on any paid service or needing a server.
+I have a few repos which are public, I want to have a google form which is accessible for anyone without logging into to be able be able to fill in the details and create an issue in the configured GitHub repo. I would have a drop down of repos and the issue logged in should get created in the chosen repo. This will avoid the need to login to GitHub to log the issue. It should be as simple as possible without relying on any paid service or needing a server.
 
 ## Implementation
 This is a fully free, server-less way to do this: Google Form → Google Apps Script (triggered on submit) → GitHub REST API. Apps Script runs on Google's infrastructure under your Google account, so it can hold your GitHub token privately and make the API call — the person filling out the form never needs a GitHub login or ever sees the token.
